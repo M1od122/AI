@@ -1,0 +1,19 @@
+# Поддержка нескольких каналов
+channels:
+  channel1:
+    twitch_name: "jemimahtrahan6617"
+    mystrm_token: "OvA4TLlO3JTEWzZRgmuumbrsIwLTKLxB"
+    personality: "sarcastic_gamer"
+    llm_model: "phi3:medium"
+
+# Общие настройки
+llm:
+  endpoint: "http://localhost:11434/api/generate"  # Используется в Docker
+  # endpoint: "http://localhost:11434/api/generate"  # Для Windows
+
+memory:
+  history_length: 12
+  timeout_for_silence_sec: 35
+
+mystrm:
+  api_url: "https://mystrm.ru/api/v2"

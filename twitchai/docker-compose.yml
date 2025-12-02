@@ -1,0 +1,23 @@
+version: '3'
+services:
+  ollama:
+    image: ollama/ollama:latest
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_models:/root/.ollama
+    deploy:
+      resources:
+        reservations:
+          memory: 6G
+
+  twitch-ai-viewer:
+    build: .
+    volumes:
+      - ./config.yaml:/app/config.yaml
+    depends_on:
+      - ollama
+    restart: unless-stopped
+
+volumes:
+  ollama_models:
