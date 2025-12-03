@@ -1,4 +1,3 @@
-# twitch_reader.py
 import asyncio
 from twitchio.ext import commands
 from datetime import datetime
@@ -27,4 +26,5 @@ class TwitchChatReader:
                 )
 
     async def start(self):
+
         await self.bot.start()
