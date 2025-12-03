@@ -1,4 +1,3 @@
-# mystrm.py
 import requests
 
 def send_message_via_mystrm(token: str, message: str, api_url: str):
@@ -22,4 +21,5 @@ def send_message_via_mystrm(token: str, message: str, api_url: str):
             return False
     except Exception as e:
         print(f"❗ Ошибка отправки в MyStrm: {e}")
+
         return False
