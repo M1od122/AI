@@ -1,4 +1,3 @@
-# ai_engine.py
 import requests
 import yaml
 from datetime import datetime
@@ -76,4 +75,5 @@ def generate_ai_reply(
             return ""
     except Exception as e:
         print(f"❗ Ошибка LLM: {e}")
+
         return ""
