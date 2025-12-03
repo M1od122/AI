@@ -1,6 +1,3 @@
-# main.py
-#jemimahtrahan6617;4o2b23wsmo;temandigank7@hotmail.com;oYkFEQM1;7lowzycgzw6682uvwr07pne2devwu9
-
 import asyncio
 import sys
 import yaml
@@ -115,3 +112,4 @@ if __name__ == "__main__":
     except Exception as e:
         print(f"\n💥 Неожиданная ошибка: {e}")
         sys.exit(1)
+
